@@ -1,4 +1,4 @@
-function pigLatin(element, pattern) {
+function pigLatin(element) {
   const sequence = ["a", "e", "i", "o", "u"];
   let wordArray = element.split("");
 
