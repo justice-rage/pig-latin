@@ -1,9 +1,9 @@
-function pigLatin(dnaSequence, pattern) {
-  for (let i = 0; i < dnaSequence.length; i +=1) {
-    if (dnaSequence[i] === pattern) {
-      return true;
-    };
-    console.log("Looped!");
+function pigLatin(element, pattern) {
+  const sequence = ["a", "e", "i", "o", "u"];
+  let wordArray = element.split("");
+
+    if (sequence.includes(wordArray[0])) {
+      return wordArray.join("") + "way"; 
+    }
+    return i;
   }
-  return false;
-}
