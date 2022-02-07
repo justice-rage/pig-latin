@@ -6,11 +6,20 @@
 
 function pigLatin(element) {
   let firstConsonants = [];
-  const vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"];
-  let wordArray = element.split("");
+  const vowels = ["a", "e", "i", "o", "u"];
+  let wordArray = element.toLowerCase().split("");
 
     if (vowels.includes(wordArray[0])) {
       return wordArray.join("") + "way"; 
     }
-    return i;
+    for (i in wordArray) {
+      if (!vowels.includes(wordArray[i])) {
+        firstConsonants.push(wordArray[i]);
+      } else {
+        word =
+          wordArray.splice(i).join("") + firstConsonants.join("") + "ay";
+          break;
+      }
+    }
+    return word;
   }
